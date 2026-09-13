@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#39253e">
+  <title>Hema at 25 — An Extremely Serious Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>.page.final-art{display:none}.page.final-art.show{display:grid}</style>
+</head>
+<body>
+  <main class="desk">
+    <div class="confetti" aria-hidden="true"></div>
+    <section class="cover" id="cover" aria-label="Birthday book cover">
+      <div class="book-cover">
+        <p class="tiny">LIMITED EDITION · 2026 · ABSOLUTELY NOT A THESIS</p>
+        <div class="cover-stars">✦ &nbsp; ✧ &nbsp; ✦</div>
+        <p class="edition">THE HIGHLY<br>ANTICIPATED</p>
+        <h1>Hema<br><span>turns 25</span></h1>
+        <p class="subtitle">A small, extremely official record<br>of one unusually iconic human.</p>
+        <div class="cover-sticker">25<br><small>and still<br>causing scenes</small></div>
+        <button class="open-book" id="open-book">open the evidence <span>→</span></button>
+        <p class="cover-footnote">Warning: contains affection, audacity, and a tiny surprise.</p>
+      </div>
+    </section>
+
+    <section class="book-stage" id="book-stage" hidden>
+      <div class="book" id="book">
+        <article class="page left-page">
+          <p class="page-number">01</p>
+          <p class="kicker">FOREWORD</p>
+          <h2>Dear Hema,</h2>
+          <p>You are now 25. This is a very respectable age. You may begin acting wise at any convenient time. No pressure.</p>
+          <p>Jokes aside, I hope this year gives you bigger laughs, better stories, and exactly the kind of chaos you secretly enjoy.</p>
+          <p class="scribble">— from someone who has receipts ♡</p>
+          <div class="tape tape-one"></div>
+        </article>
+        <article class="page right-page polaroid-page">
+          <p class="page-number">02</p>
+          <figure class="polaroid tilted-right"><img src="assets/memory-01.jpeg" alt="Hema in a happy memory"><figcaption>evidence of good times</figcaption></figure>
+          <span class="doodle flower">✿</span><span class="doodle heart">♥</span>
+        </article>
+
+        <article class="page left-page">
+          <p class="page-number">03</p>
+          <p class="kicker">AN OBJECTIVE STUDY</p>
+          <h2>Reasons you are<br>quite a lot.</h2>
+          <ol class="reasons">
+            <li><b>01</b> You make ordinary plans feel like an event.</li>
+            <li><b>02</b> You have excellent taste in being yourself.</li>
+            <li><b>03</b> You are somehow both chill and the entire plot.</li>
+            <li><b>04</b> People are luckier after they meet you.</li>
+          </ol>
+          <p class="margin-note">Peer reviewed by me. Obviously.</p>
+        </article>
+        <article class="page right-page photo-collage">
+          <p class="page-number">04</p>
+          <figure class="polaroid small-photo one"><img src="assets/memory-03.jpeg" alt="A memory with Hema"></figure>
+          <figure class="polaroid small-photo two"><img src="assets/memory-05.jpeg" alt="A memory with Hema"></figure>
+          <figure class="polaroid small-photo three"><img src="assets/memory-07.jpeg" alt="A memory with Hema"></figure>
+          <p class="scribble collage-caption">still collecting proof ✦</p>
+        </article>
+
+        <article class="page left-page finale-page">
+          <p class="page-number">05</p>
+          <p class="kicker">CONCLUSION</p>
+          <h2>To 25.</h2>
+          <p>May your next chapter be kinder, louder, and at least 37% more glamorous than the last.</p>
+          <p>Stay funny. Stay brilliant. Stay exactly Hema.</p>
+          <p class="big-love">Happy birthday,<br>you menace. ♡</p>
+        </article>
+        <article class="page right-page final-art">
+          <p class="page-number">06</p>
+          <div class="cake"><span class="flame">✦</span><i></i><i></i><i></i><b>25</b></div>
+          <p class="scribble">The end. Or the beginning.<br>Probably both.</p>
+        </article>
+      </div>
+      <div class="pager"><button id="prev" aria-label="Previous pages">←</button><span id="page-indicator">pages 1–2 of 6</span><button id="next" aria-label="Next pages">→</button></div>
+    </section>
+  </main>
+
+  <dialog id="surprise" aria-labelledby="surprise-title">
+    <button class="dialog-close" id="close-surprise" aria-label="Close surprise">×</button>
+    <div class="monster" aria-hidden="true"><span>◉</span><span>◉</span><b>▽</b></div>
+    <p class="kicker">PLOT TWIST</p>
+    <h2 id="surprise-title">BOO, HEMA!</h2>
+    <p>You opened the book. You expected heartfelt literature. Instead, you got a very small scare and a very big happy birthday.</p>
+    <button class="continue" id="continue">okay, rude. continue →</button>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
