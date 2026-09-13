@@ -26,6 +26,12 @@ document.querySelector('#open-book').addEventListener('click', () => {
 });
 document.querySelector('#close-surprise').addEventListener('click', () => surprise.close());
 document.querySelector('#continue').addEventListener('click', () => surprise.close());
+surprise.addEventListener('pointermove', event => {
+  const x = (event.clientX / innerWidth - .5) * 20;
+  const y = (event.clientY / innerHeight - .5) * 13;
+  surprise.style.setProperty('--look-x', `${x}px`);
+  surprise.style.setProperty('--look-y', `${y}px`);
+});
 prev.addEventListener('click', () => { if (spread > 0) { spread--; renderSpread(); } });
 next.addEventListener('click', () => { const increment = isMobile() ? 1 : 2; if ((isMobile() ? spread : spread * 2) + increment < pages.length) { spread++; renderSpread(); } });
 addEventListener('resize', () => { spread = 0; if (!stage.hidden) renderSpread(); });
